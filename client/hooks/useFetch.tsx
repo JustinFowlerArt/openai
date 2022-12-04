@@ -11,7 +11,6 @@ export const useFetch = <T, E>(
 
     const getData = useCallback(async () => {
         setLoading(true);
-        setData(null)
         setError(null);
         try {
             const response = await fetch(url, options);
